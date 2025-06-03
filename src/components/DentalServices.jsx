@@ -52,9 +52,9 @@ const DentalServices = () => {
       
       const teamInterval = setInterval(() => {
         setTeamCount(prev => {
-          if (prev < 20) return prev + 1;
+          if (prev < 10) return prev + 1;
           clearInterval(teamInterval);
-          return 20;
+          return 10;
         });
       }, 100);
       
@@ -111,7 +111,7 @@ const DentalServices = () => {
       description: "We bring the right people together to challenge established thinking"
     },
     {
-      title: "Prosthesis",
+      title: "Child dentistry (Pedodontist) ",
       iconPath: "/images/prosthesis-icon.png",
       description: "We bring the right people together to challenge established thinking"
     },

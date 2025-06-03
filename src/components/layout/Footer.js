@@ -20,10 +20,12 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <p className="text-gray-600">
-                B-455 Panchsheel, B Block, Ajmer<br />
-                Rajasthan, India
-              </p>
+              <div>
+                <p className="text-gray-600 font-medium">Paras Urology & Multispeciality Hospital</p>
+                <p className="text-gray-600">Haribhau Upadhyay Nagar, C-Block, Pushkar Road, Ajmer</p>
+                <p className="text-gray-600 mt-2 font-medium">Nivik Smile Care</p>
+                <p className="text-gray-600">B-455 Panchsheel, B Block, Ajmer, Rajasthan</p>
+              </div>
             </div>
             
             <div className="flex items-start">
@@ -57,7 +59,7 @@ const Footer = () => {
                 <li><Link href="/services" className="text-gray-600 hover:text-teal-500">Services</Link></li>
                 <li><Link href="/contact" className="text-gray-600 hover:text-teal-500">Contact Me</Link></li>
                 <li><Link href="/faq" className="text-gray-600 hover:text-teal-500">FAQ</Link></li>
-                <li><Link href="/404" className="text-gray-600 hover:text-teal-500">404</Link></li>
+                <li><Link href="/blog" className="text-gray-600 hover:text-teal-500">Blog</Link></li>
               </ul>
             </div>
           </div>
@@ -71,44 +73,37 @@ const Footer = () => {
         <div className="bg-[#E2E9EB] lg:p-14 p-10 m-8 md:w-[570px] rounded-[120px_30px_120px_120px]">
           <h2 className="text-3xl text-center font-bold text-black mb-6">Schedule</h2>
           
-          <div className="space-y-3">
-            <div className="bg-white p-4 rounded-lg flex justify-between items-center">
-              <span className="text-gray-700">Monday</span>
-              <span className="text-gray-700">09:00 - 18:00</span>
+          <div className="space-y-4">
+            <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+              <div className="text-gray-800 font-semibold text-lg mb-3">Monday - Saturday</div>
+              <div className="space-y-3">
+                <div className="bg-gray-50 p-3 rounded-lg">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-700 font-medium">Paras Urology Hospital</span>
+                    <span className="text-teal-600 font-semibold">10:00 AM - 12:00 PM</span>
+                  </div>
+                  <div className="text-xs text-gray-500 mt-1">Morning Session</div>
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-700 font-medium">Nivik Smile Care</span>
+                    <span className="text-teal-600 font-semibold">5:00 PM - 7:00 PM</span>
+                  </div>
+                  <div className="text-xs text-gray-500 mt-1">Evening Session</div>
+                </div>
+              </div>
             </div>
             
-            <div className="bg-white p-4 rounded-lg flex justify-between items-center">
-              <span className="text-gray-700">Tuesday</span>
-              <span className="text-gray-700">09:00 - 18:00</span>
-            </div>
-            
-            <div className="bg-white p-4 rounded-lg flex justify-between items-center">
-              <span className="text-gray-700">Wednesday</span>
-              <span className="text-gray-700">09:00 - 18:00</span>
-            </div>
-            
-            <div className="bg-white p-4 rounded-lg flex justify-between items-center">
-              <span className="text-gray-700">Thursday</span>
-              <span className="text-gray-700">09:00 - 18:00</span>
-            </div>
-            
-            <div className="bg-white p-4 rounded-lg flex justify-between items-center">
-              <span className="text-gray-700">Friday</span>
-              <span className="text-gray-700">09:00 - 18:00</span>
-            </div>
-            
-            <div className="bg-white p-4 rounded-lg flex justify-between items-center">
-              <span className="text-gray-700">Saturday</span>
-              <span className="text-gray-700">10:00 - 16:00</span>
-            </div>
-            
-            <div className="bg-white p-4 rounded-lg flex justify-between items-center">
-              <span className="text-gray-700">Sunday</span>
-              <span className="text-gray-700">Closed</span>
+            <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+              <div className="flex justify-between items-center">
+                <span className="text-gray-800 font-semibold text-lg">Sunday</span>
+                <span className="text-red-500 font-semibold">Closed</span>
+              </div>
+              <div className="text-xs text-gray-500 mt-2">Weekly Off</div>
             </div>
           </div>
           
-          <button className="w-full mt-6 bg-teal-500 hover:bg-teal-600 text-white font-medium py-4 px- rounded-lg uppercase tracking-wide transition duration-200">
+          <button className="w-full mt-6 bg-teal-500 hover:bg-teal-600 text-white font-medium py-4 px-4 rounded-lg uppercase tracking-wide transition duration-200">
             Make an Appointment
           </button>
         </div>

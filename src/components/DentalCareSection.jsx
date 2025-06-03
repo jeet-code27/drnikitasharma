@@ -65,7 +65,7 @@ const DentalCareSection = () => {
               <div className=" bg-teal-500 rounded-lg flex-shrink-0 flex items-center justify-center">
                 {/* Doctor Icon */}
                 <Image 
-                  src="/images/doctor.png" 
+                  src="/images/doctor.png"  
                   alt="Doctor Icon" 
                   width={100} 
                   height={100} 

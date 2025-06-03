@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone, MapPin, Clock, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -71,8 +72,15 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/" className="text-2xl font-bold uppercase text-gray-800">
-              Dr. Nikita Sharma
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/logo.png"
+                alt="Logo"
+                width={200}
+                height={100}
+                className="h-20 w-auto"
+                priority
+              />
             </Link>
           </motion.div>
           
@@ -83,14 +91,18 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, staggerChildren: 0.1, delayChildren: 0.2 }}
             >
+              <Link href="/" className="text-gray-700 font-medium hover:text-[#2EC4B6] transition-colors">
+                HOME
+              </Link>
               <Link href="/about" className="text-gray-700 font-medium hover:text-[#2EC4B6] transition-colors">
                 ABOUT US
               </Link>
-              <Link href="/dentists" className="text-gray-700 font-medium hover:text-[#2EC4B6] transition-colors">
-                OUR DENTISTS
-              </Link>
+             
               <Link href="/services" className="text-gray-700 font-medium hover:text-[#2EC4B6] transition-colors">
                 SERVICES
+              </Link>
+               <Link href="/blog" className="text-gray-700 font-medium hover:text-[#2EC4B6] transition-colors">
+                BLOG
               </Link>
               <Link href="/contact" className="text-gray-700 font-medium hover:text-[#2EC4B6] transition-colors">
                 CONTACT US
@@ -98,6 +110,7 @@ export default function Navbar() {
               <Link href="/faq" className="text-gray-700 font-medium hover:text-[#2EC4B6] transition-colors">
                 FAQ
               </Link>
+
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -147,8 +160,15 @@ export default function Navbar() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.2 }}
                   >
-                    <Link href="/" className="text-2xl font-bold uppercase text-gray-800">
-                    Dr. Nikita Sharma
+                    <Link href="/" className="flex items-center">
+                      <Image
+                        src="/images/logo.png"
+                        alt="Logo"
+                        width={160}
+                        height={80}
+                        className="h-16 w-auto"
+                        priority
+                      />
                     </Link>
                   </motion.div>
                   <motion.button 
@@ -176,9 +196,10 @@ export default function Navbar() {
                     }}
                   >
                     {[
+                      { href: "/", label: "HOME" },
                       { href: "/about", label: "ABOUT US" },
-                      { href: "/dentists", label: "OUR DENTISTS" },
                       { href: "/services", label: "SERVICES" },
+                      { href: "/blog", label: "BLOG" },
                       { href: "/contact", label: "CONTACT US" },
                       { href: "/faq", label: "FAQ" }
                     ].map((item, index) => (
@@ -258,7 +279,7 @@ export default function Navbar() {
             </motion.div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence>  
     </>
   );
 }
