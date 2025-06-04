@@ -26,20 +26,20 @@ const clinicsData = [
     },
     {
         name: "Restorative Dentistry",
-        slug: "restorative",
+        slug: "restorative-dentistry",
         imageSrc: "/images/restorative.jpeg",
         discription: "Restoring damaged or missing teeth to improve function, appearance, and oral health using fillings, crowns, bridges, and implants."
     },
     
     {
         name: "Preventive Care",
-        slug: "preventive",
+        slug: "preventive-care",
         imageSrc: "/images/preventive-care.jpeg",
         discription: "Routine checkups, cleanings, and early treatments to maintain oral health and prevent dental issues."
     },
     {
         name: "Gum & Periodontal Treatment",
-        slug: "gum",
+        slug: "gum-periodontal-treatment",
         imageSrc: "/images/gum-periodontal.jpeg",
         discription: "Deep cleaning (scaling and root planing), Gum infection treatment, Periodontal maintenance"
     }

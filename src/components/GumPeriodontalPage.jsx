@@ -1,9 +1,9 @@
 import React from 'react';
-import { Clock, MapPin, Star, CheckCircle, AlertCircle, Smile } from 'lucide-react';
+import { Clock, MapPin, Star, CheckCircle, AlertCircle, Shield } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const RestorativeDentistryPage = () => {
+const GumPeriodontalPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-50 to-cyan-50">
       {/* Hero Section */}
@@ -11,13 +11,13 @@ const RestorativeDentistryPage = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <div className="flex justify-center mb-4">
-              <Image src="/images/icons/treatment.png" alt="Treatment Icon" width={60} height={60} />
+              <Image src="/images/icons/health.png" alt="Gum Health Icon" width={60} height={60} />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Restorative Dentistry Services 
+              Gum & Periodontal Treatment
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Repairing and replacing damaged or missing teeth to restore function, comfort, and appearance with fillings, crowns, bridges, and implants
+              Specialized care for your gums to treat and prevent periodontal disease, restore gum health, and maintain your natural smile
             </p>
           </div>
           
@@ -31,7 +31,7 @@ const RestorativeDentistryPage = () => {
                 Dr. Nikita Sharma
               </h2>
               <p className="text-lg text-gray-700 font-medium">
-                B.D.S., M.D.S., PEDODONTIST, RESTORATIVE DENTISTRY SPECIALIST
+                B.D.S., M.D.S., PEDODONTIST, PERIODONTAL SPECIALIST
               </p>
               <div className="flex justify-center mt-4">
                 {[...Array(5)].map((_, i) => (
@@ -73,22 +73,22 @@ const RestorativeDentistryPage = () => {
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-16">
         
-        {/* What is Restorative Dentistry */}
+        {/* What is Periodontal Treatment */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
-              <Smile className="w-8 h-8 text-teal-600 mr-3" />
-              What is Restorative Dentistry?
+              <Shield className="w-8 h-8 text-teal-600 mr-3" />
+              What is Gum & Periodontal Treatment?
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              Restorative dentistry focuses on repairing or replacing damaged or missing teeth to restore 
-              proper function, comfort, and appearance. These procedures not only improve your smile's 
-              aesthetics but also protect your oral health by preventing further damage and decay.
+              Periodontal treatment focuses on preventing, diagnosing, and treating gum disease (periodontitis) 
+              and other conditions that affect the gums and bone supporting your teeth. Healthy gums are the 
+              foundation for a healthy smile, and we offer comprehensive care to maintain your gum health.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Our restorative treatments use high-quality materials that blend seamlessly with your natural 
-              teeth, providing durable solutions that can last for years with proper care. Whether you 
-              need a simple filling or a full-mouth reconstruction, we can help restore your smile.
+              From routine cleanings to advanced gum therapies, our treatments are designed to stop the progression 
+              of gum disease, restore gum health, and prevent tooth loss. Early intervention is key to successful 
+              periodontal treatment.
             </p>
           </div>
         </section>
@@ -96,16 +96,16 @@ const RestorativeDentistryPage = () => {
         {/* Services Offered */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-            Our Restorative Services
+            Our Gum & Periodontal Services
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: "filling", title: "Dental Fillings", desc: "Tooth-colored composite to repair cavities" },
-              { icon: "crown", title: "Dental Crowns", desc: "Custom caps to protect damaged teeth" },
-              { icon: "orthodontics", title: "Dental Bridges", desc: "Fixed solution to replace missing teeth" },
-              { icon: "treatment", title: "Dental Implants", desc: "Permanent tooth replacement solution" },
-              { icon: "root-canal", title: "Root Canal Therapy", desc: "Save infected teeth from extraction" },
-              { icon: "dentures", title: "Dentures", desc: "Removable replacements for missing teeth" }
+              { icon: "cleaning", title: "Deep Cleaning (Scaling & Root Planing)", desc: "Removes plaque and tartar below the gumline" },
+              { icon: "hygiene", title: "Periodontal Maintenance", desc: "Specialized cleanings to manage gum disease" },
+              { icon: "treatment", title: "Gum Infection Treatment", desc: "Treats active gum infections and abscesses" },
+              { icon: "examination", title: "Gum Disease Evaluation", desc: "Comprehensive assessment of gum health" },
+              { icon: "health", title: "Gum Grafting", desc: "Restores receded gum tissue" },
+              { icon: "bonding", title: "Pocket Reduction Therapy", desc: "Reduces spaces between teeth and gums" }
             ].map((service, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
                 <div className="mb-4">
@@ -129,52 +129,46 @@ const RestorativeDentistryPage = () => {
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
               <AlertCircle className="w-8 h-8 text-amber-500 mr-3" />
-              Signs You May Need Restorative Treatment
+              Signs You May Need Gum Treatment
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <div className="flex items-start">
-                  
                   <div>
-                    <h4 className="font-semibold text-gray-800">Tooth Pain or Sensitivity</h4>
-                    <p className="text-gray-600">Especially to hot, cold, or sweet foods</p>
+                    <h4 className="font-semibold text-gray-800">Bleeding Gums</h4>
+                    <p className="text-gray-600">Especially when brushing or flossing</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                 
                   <div>
-                    <h4 className="font-semibold text-gray-800">Visible Cavities</h4>
-                    <p className="text-gray-600">Dark spots or holes in your teeth</p>
+                    <h4 className="font-semibold text-gray-800">Swollen or Red Gums</h4>
+                    <p className="text-gray-600">Tender or painful gum tissue</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                
                   <div>
-                    <h4 className="font-semibold text-gray-800">Cracked or Broken Teeth</h4>
-                    <p className="text-gray-600">From injury or wear over time</p>
+                    <h4 className="font-semibold text-gray-800">Receding Gums</h4>
+                    <p className="text-gray-600">Teeth appearing longer than before</p>
                   </div>
                 </div>
               </div>
               <div className="space-y-4">
                 <div className="flex items-start">
-                 
                   <div>
-                    <h4 className="font-semibold text-gray-800">Difficulty Chewing</h4>
-                    <p className="text-gray-600">Pain or discomfort when eating</p>
+                    <h4 className="font-semibold text-gray-800">Persistent Bad Breath</h4>
+                    <p className="text-gray-600">That doesn't go away with brushing</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                
                   <div>
-                    <h4 className="font-semibold text-gray-800">Missing Teeth</h4>
-                    <p className="text-gray-600">Gaps affecting function or appearance</p>
+                    <h4 className="font-semibold text-gray-800">Loose Teeth</h4>
+                    <p className="text-gray-600">Or changes in how your teeth fit together</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-               
                   <div>
-                    <h4 className="font-semibold text-gray-800">Old, Worn Restorations</h4>
-                    <p className="text-gray-600">Fillings or crowns that need replacement</p>
+                    <h4 className="font-semibold text-gray-800">Pus Between Teeth</h4>
+                    <p className="text-gray-600">Sign of active gum infection</p>
                   </div>
                 </div>
               </div>
@@ -185,57 +179,57 @@ const RestorativeDentistryPage = () => {
         {/* Treatment Spotlights */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-            Restorative Treatment Spotlights
+            Periodontal Treatment Spotlights
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl shadow-lg p-6">
               <div className="flex items-center mb-4">
-                <Image src="/images/icons/crown.png" alt="Dental Crowns" width={40} height={40} className="mr-4" />
-                <h3 className="text-2xl font-bold text-gray-800">Dental Crowns</h3>
+                <Image src="/images/icons/cleaning.png" alt="Deep Cleaning" width={40} height={40} className="mr-4" />
+                <h3 className="text-2xl font-bold text-gray-800">Scaling & Root Planing</h3>
               </div>
               <p className="text-gray-700 mb-4">
-                Crowns are custom-made caps that completely cover damaged teeth to restore their 
-                shape, size, strength, and appearance. They're ideal for teeth with large fillings, 
-                after root canal treatment, or with significant damage.
+                This deep cleaning procedure removes plaque and tartar from below the gumline and smooths 
+                tooth roots to help gums reattach to teeth. It's the gold standard treatment for early to 
+                moderate periodontitis.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-teal-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Protect weakened teeth from further damage</span>
+                  <span>Removes bacterial toxins from root surfaces</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-teal-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Made from porcelain, ceramic, or metal alloys</span>
+                  <span>Reduces gum inflammation and pocket depth</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-teal-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Typically last 5-15 years depending on care</span>
+                  <span>Typically completed in 2-4 visits</span>
                 </li>
               </ul>
             </div>
             
             <div className="bg-white rounded-2xl shadow-lg p-6">
               <div className="flex items-center mb-4">
-                <Image src="/images/icons/treatment.png" alt="Dental Implants" width={40} height={40} className="mr-4" />
-                <h3 className="text-2xl font-bold text-gray-800">Dental Implants</h3>
+                <Image src="/images/icons/hygiene.png" alt="Periodontal Maintenance" width={40} height={40} className="mr-4" />
+                <h3 className="text-2xl font-bold text-gray-800">Periodontal Maintenance</h3>
               </div>
               <p className="text-gray-700 mb-4">
-                Implants are titanium posts surgically placed in the jawbone to replace missing 
-                tooth roots. They provide a stable foundation for crowns, bridges, or dentures, 
-                offering the closest alternative to natural teeth.
+                After active periodontal treatment, regular maintenance cleanings (every 3-4 months) are 
+                essential to prevent disease recurrence. These specialized cleanings go beyond routine 
+                prophylaxis to maintain gum health.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-teal-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Prevent bone loss in the jaw</span>
+                  <span>Monitors gum health and pocket depths</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-teal-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Don't require altering adjacent teeth</span>
+                  <span>Removes new plaque and tartar buildup</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-teal-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Can last a lifetime with proper care</span>
+                  <span>Helps prevent disease progression</span>
                 </li>
               </ul>
             </div>
@@ -245,17 +239,17 @@ const RestorativeDentistryPage = () => {
         {/* Treatment Process */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-            Your Restoration Process
+            Your Gum Treatment Process
           </h2>
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { step: "1", icon: "examination", title: "Evaluation", desc: "Comprehensive exam and diagnostics" },
-              { step: "2", icon: "planning", title: "Treatment Plan", desc: "Customized restoration options" },
-              { step: "3", icon: "cleaning", title: "Preparation", desc: "Tooth preparation and impressions" },
-              { step: "4", icon: "retention", title: "Placement", desc: "Final restoration placement" }
+              { step: "1", icon: "examination", title: "Comprehensive Evaluation", desc: "Gum measurements and assessment" },
+              { step: "2", icon: "health-history", title: "Diagnosis", desc: "Determine type and severity of gum disease" },
+              { step: "3", icon: "cleaning", title: "Active Treatment", desc: "Deep cleaning or other therapies" },
+              { step: "4", icon: "hygiene", title: "Maintenance", desc: "Ongoing care to preserve results" }
             ].map((process, index) => (
               <div key={index} className="text-center">
-                <div className="bg-white rounded-2xl p-6 shadow-lg mb-4" style={{backgroundColor: '#BCF7F1'}}>
+                <div className="bg-white rounded-2xl p-6 h-[250px] shadow-lg mb-4" style={{backgroundColor: '#BCF7F1'}}>
                   <div className="flex justify-center mb-3">
                     <Image 
                       src={`/images/icons/${process.icon}.png`} 
@@ -278,29 +272,29 @@ const RestorativeDentistryPage = () => {
         <section className="mb-16">
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
-              Benefits of Restorative Dentistry
+              Benefits of Gum Treatment
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center p-4">
                 <div className="flex justify-center mb-4">
-                  <Image src="/images/icons/health.png" alt="Restored Function" width={48} height={48} />
+                  <Image src="/images/icons/health.png" alt="Prevent Tooth Loss" width={48} height={48} />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Restored Function</h3>
-                <p className="text-gray-600">Eat, speak, and chew comfortably again</p>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Prevent Tooth Loss</h3>
+                <p className="text-gray-600">Protect your natural teeth by treating gum disease</p>
               </div>
               <div className="text-center p-4">
                 <div className="flex justify-center mb-4">
-                  <Image src="/images/icons/appearance.png" alt="Improved Appearance" width={48} height={48} />
+                  <Image src="/images/icons/appearance.png" alt="Healthier Gums" width={48} height={48} />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Improved Appearance</h3>
-                <p className="text-gray-600">Natural-looking repairs that blend seamlessly</p>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Healthier Gums</h3>
+                <p className="text-gray-600">Reduce inflammation and bleeding</p>
               </div>
               <div className="text-center p-4">
                 <div className="flex justify-center mb-4">
-                  <Image src="/images/icons/orthodontics.png" alt="Oral Health" width={48} height={48} />
+                  <Image src="/images/icons/orthodontics.png" alt="Overall Health" width={48} height={48} />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Oral Health</h3>
-                <p className="text-gray-600">Prevent further dental problems and bone loss</p>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Overall Health</h3>
+                <p className="text-gray-600">Reduce risk of systemic health complications</p>
               </div>
             </div>
           </div>
@@ -309,9 +303,9 @@ const RestorativeDentistryPage = () => {
         {/* Call to Action */}
         <section className="text-center">
           <div className="bg-gradient-to-r from-teal-500 to-cyan-500 rounded-2xl p-8 text-white">
-            <h2 className="text-3xl font-bold mb-4">Ready to Restore Your Smile?</h2>
+            <h2 className="text-3xl font-bold mb-4">Concerned About Your Gum Health?</h2>
             <p className="text-xl mb-6">
-              Schedule an appointment with Dr. Nikita Sharma today to discuss your restorative options!
+              Schedule an appointment with Dr. Nikita Sharma for a comprehensive gum evaluation!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/appointment">
@@ -327,4 +321,4 @@ const RestorativeDentistryPage = () => {
   );
 };
 
-export default RestorativeDentistryPage;
+export default GumPeriodontalPage;
