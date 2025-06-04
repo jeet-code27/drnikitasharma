@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import Script from "next/script"; 
+
 
 import {
     Clock,
@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import PatientReviews from "./PatientReviews";
 import PhoneCallCTA from "./PhoneCallCTA";
+import ElfsightWidget from "./ElfsightWidget";
 
 const AboutUsSection = () => {
     return (
@@ -155,17 +156,8 @@ const AboutUsSection = () => {
                 <PatientReviews/>
             </section>
 
-            {/* Section 7: Google Reviews - NEW */}
-            <section className="py-16 bg-gray-50"> {/* Added a light background for distinction */}
 
-            </section>
-
-            {/* Elfsight Script */}
-            <Script
-                src="https://static.elfsight.com/platform/platform.js"
-                strategy="afterInteractive"
-                async // Retaining async as per original script, though strategy often handles this
-            />
+        
         </>
     );
 };

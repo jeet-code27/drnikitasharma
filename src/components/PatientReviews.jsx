@@ -2,6 +2,7 @@
 import React from 'react';
 
 import 'react-multi-carousel/lib/styles.css';
+import ElfsightWidget from './ElfsightWidget';
 
 
 const PatientReviews = () => {
@@ -22,9 +23,7 @@ const PatientReviews = () => {
 
       {/* Carousel with controlled z-index */}
       <div className="relative z-20">
-  <div className="max-w-8xl mx-auto px-8 sm:px-8 lg:px-18 mt-10">
-                            <div className="elfsight-app-241c2b24-46f2-47c7-8eb7-3f7cb2f62037" data-elfsight-app-lazy></div>
-                        </div>
+       <ElfsightWidget/>
       
       </div>
     </div>
