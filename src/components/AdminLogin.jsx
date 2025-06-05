@@ -7,6 +7,7 @@ import {
   getDocs, 
   query, 
   orderBy,
+  where,
   doc,
   updateDoc,
   deleteDoc
@@ -101,32 +102,83 @@ const AdminLogin = () => {
   }, [bookings, filterDate, filterLocation, filterName]);
 
   // Fetch bookings from Firestore
-  const fetchBookings = async () => {
+ const fetchBookings = async () => {
     if (!db) {
       console.error("Firebase database connection not established");
       return;
     }
-  
+
     setIsLoading(true);
-  
+
     try {
       const bookingsRef = collection(db, "bookings");
-      const q = query(bookingsRef, where("doctorType", "==", "dr_nikita"));
+      
+      // Try the simplest query first - just filter by doctorType
+      const q = query(
+        bookingsRef, 
+        where("doctorType", "==", "dr_nikita")
+      );
+      
       const querySnapshot = await getDocs(q);
       
       const bookingsData = [];
-  
       querySnapshot.forEach((doc) => {
         bookingsData.push({
           id: doc.id,
           ...doc.data(),
         });
       });
-  
+
+      // Sort by date and time in JavaScript after fetching
+      bookingsData.sort((a, b) => {
+        // First sort by date (most recent first)
+        if (a.date !== b.date) {
+          return new Date(b.date) - new Date(a.date);
+        }
+        // Then sort by time slot (earliest first)
+        return (a.timeSlot || "").localeCompare(b.timeSlot || "");
+      });
+
+      console.log("Fetched bookings:", bookingsData);
       setBookings(bookingsData);
       setFilteredBookings(bookingsData);
     } catch (error) {
       console.error("Error fetching bookings:", error);
+      
+      // If even the simple query fails, try without any filters
+      try {
+        const bookingsRef = collection(db, "bookings");
+        const querySnapshot = await getDocs(bookingsRef);
+        
+        const bookingsData = [];
+        querySnapshot.forEach((doc) => {
+          const data = doc.data();
+          // Filter for dr_nikita in JavaScript
+          if (data.doctorType === "dr_nikita") {
+            bookingsData.push({
+              id: doc.id,
+              ...data,
+            });
+          }
+        });
+
+        // Sort in JavaScript
+        bookingsData.sort((a, b) => {
+          if (a.date !== b.date) {
+            return new Date(b.date) - new Date(a.date);
+          }
+          return (a.timeSlot || "").localeCompare(b.timeSlot || "");
+        });
+
+        console.log("Fetched bookings (fallback):", bookingsData);
+        setBookings(bookingsData);
+        setFilteredBookings(bookingsData);
+      } catch (fallbackError) {
+        console.error("Error with fallback query:", fallbackError);
+        // Set empty arrays if all queries fail
+        setBookings([]);
+        setFilteredBookings([]);
+      }
     } finally {
       setIsLoading(false);
     }
@@ -209,10 +261,10 @@ const AdminLogin = () => {
       };
 
       await emailjs.send(
-        "service_ptrjme3", // Use Dr. Nikita's EmailJS service
-        "template_mjozq4o", // Use Dr. Nikita's email template
+        "service_pmecegj", // Use Dr. Nikita's EmailJS service
+        "template_5so9l0g", // Use Dr. Nikita's email template
         templateParams,
-        "g45rTVxOaQ2qWUKTt" // EmailJS user ID
+        "2GMGU770lsGivXuLD" // EmailJS user ID
       );
 
       fetchBookings();
@@ -251,10 +303,10 @@ const AdminLogin = () => {
       };
 
       await emailjs.send(
-        "service_ptrjme3",
-        "template_mjozq4o",
+        "service_pmecegj", // Use Dr. Nikita's EmailJS service
+        "template_5so9l0g", // Use Dr. Nikita's email template
         templateParams,
-        "g45rTVxOaQ2qWUKTt"
+        "2GMGU770lsGivXuLD"
       );
 
       fetchBookings();

@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import DentalServices from "@/components/DentalServices";
 import DentalFAQ from "@/components/DentalFaq";
 import PatientReviews from "@/components/PatientReviews";
+import ServicesSlider from "@/components/ServiceSlider";
 
 
 export default function Home() {
@@ -11,7 +12,9 @@ export default function Home() {
       <Hero />
      <DentalCareSection/>
      <DentalServices/>
+     
      <DentalFAQ/>
+    <ServicesSlider/>
      <PatientReviews/>
     </div>
   );

@@ -4,12 +4,13 @@ import { getAnalytics } from 'firebase/analytics';
 
 // Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBCVasm193c5Y3f7NMVZcL2c6_1mUcJ0ec",
-    authDomain: "gaurnishhealth-d6227.firebaseapp.com",
-    projectId: "gaurnishhealth-d6227",
-    storageBucket: "gaurnishhealth-d6227.firebasestorage.app",
-    messagingSenderId: "388362020101",
-    appId: "1:388362020101:web:3b0bf2b7978f1ae773836c",
+    apiKey: "AIzaSyCGvtyIZ9IuNhqhVNSIJl2eLG3nTDgIkoc",
+  authDomain: "nivik-smile-care.firebaseapp.com",
+  projectId: "nivik-smile-care",
+  storageBucket: "nivik-smile-care.firebasestorage.app",
+  messagingSenderId: "290103974274",
+  appId: "1:290103974274:web:244973f8670fac23f1979b",
+  measurementId: "G-VV97TDPM2G"
 };
 
 // Initialize Firebase only if it hasn't been initialized already

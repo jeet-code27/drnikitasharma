@@ -326,10 +326,10 @@ const BookingSystem = () => {
       };
   
       await emailjs.send(
-        "service_ptrjme3",
-        "template_mjozq4o",
+        "service_r1l16sq",
+        "template_wdpntlm",
         doctorTemplateParams,
-        "g45rTVxOaQ2qWUKTt" // Your EmailJS user ID
+        "2GMGU770lsGivXuLD" // Your EmailJS user ID
       );
   
       // Reset form

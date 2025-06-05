@@ -15,21 +15,41 @@ import {
 import PatientReviews from "./PatientReviews";
 import PhoneCallCTA from "./PhoneCallCTA";
 import ElfsightWidget from "./ElfsightWidget";
+import Link from "next/link";
 
 const AboutUsSection = () => {
     return (
         <>
-            <div className="flex flex-col items-center justify-center text-center px-4 py-12">
-                <h1 className="text-4xl font-bold text-black mb-2">About Us</h1>
-                <div className="flex items-center space-x-2 text-gray-600 text-base mb-6">
-                    <span className="text-black">Home</span>
-                    <span>/</span>
-                    <span className="text-gray-500">About Us</span>
+           <div className="relative flex flex-col items-center justify-center text-center px-4 py-20 bg-gradient-to-br from-white via-[#f0fffe] to-[#e6f9f7] overflow-hidden">
+                {/* Decorative background elements */}
+                <div className="absolute top-0 left-0 w-96 h-96 bg-[#caf4ef] rounded-full opacity-20 -translate-x-1/2 -translate-y-1/2"></div>
+                <div className="absolute bottom-0 right-0 w-80 h-80 bg-[#00BCD4] rounded-full opacity-15 translate-x-1/3 translate-y-1/3"></div>
+                <div className="absolute top-1/2 left-1/4 w-4 h-4 bg-[#00BCD4] rounded-full opacity-40 animate-pulse"></div>
+                <div className="absolute top-1/3 right-1/4 w-6 h-6 bg-[#007B8A] rounded-full opacity-30 animate-pulse delay-1000"></div>
+                
+                <div className="relative z-10 max-w-4xl mx-auto">
+                  
+                    
+                    <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-gray-900 via-[#007B8A] to-[#00BCD4] bg-clip-text mb-6 animate-fade-in">
+                        About Us
+                    </h1>
+                    
+                    <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                   Providing gentle, personalized dental care to keep your smile healthy and bright.
+                    </p>
+                    
+                    <div className="flex items-center justify-center space-x-3 text-lg">
+                        <Link href="/" className="text-gray-700 hover:text-[#00BCD4] transition-colors duration-300 font-medium">
+                            Home
+                        </Link>
+                        <span className="text-[#00BCD4] text-xl">•</span>
+                        <span className="text-gray-500 font-medium">About Us</span>
+                    </div>
                 </div>
             </div>
 
             {/* Section 1: Image + Heading */}
-            <div className="bg-[#caf4ef] px-6 py-16 rounded-tl-[120px] rounded-tr-[30px] rounded-bl-[120px] rounded-br-[120px] max-w-7xl mx-auto mb-16">
+            <div className="bg-[#caf4ef] mt-16 px-6 py-16 rounded-tl-[120px] rounded-tr-[30px] rounded-bl-[120px] rounded-br-[120px] max-w-7xl mx-auto mb-16">
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
                     {/* Left Text Content */}
                     <div className="w-full lg:w-1/2">
