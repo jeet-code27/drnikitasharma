@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const DentalFAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -12,26 +13,30 @@ const DentalFAQ = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const faqItems = [
+const faqItems = [
     {
-      question: "What dental services does your clinic offer?",
-      answer: "We offer a comprehensive range of dental services including general dentistry, cosmetic procedures, orthodontics, periodontics, and emergency dental care."
+      question: "What pediatric dental services does Nivik Smile Care offer?",
+      answer: "At Nivik Smile Care, Dr. Nikita Sharma provides specialized pediatric dental care including routine check-ups, preventive treatments, cavity management, fluoride applications, space maintainers, and child-friendly orthodontic evaluations. We also offer general dentistry services for the whole family."
     },
     {
-      question: "How often should I visit the dentist?",
-      answer: "We recommend visiting the dentist every 6 months for regular check-ups and cleanings. However, some patients may need more frequent visits based on their oral health needs."
+      question: "At what age should my child first visit the dentist?",
+      answer: "Dr. Nikita Sharma recommends that children have their first dental visit by their first birthday or within 6 months of their first tooth erupting. Early visits help establish good oral health habits and allow us to monitor proper dental development."
     },
     {
-      question: "Do you accept dental insurance?",
-      answer: "Yes, we accept most major dental insurance plans. Our staff will help verify your benefits and maximize your coverage."
+      question: "How does Nivik Smile Care make dental visits comfortable for children?",
+      answer: "Our clinic is specially designed to create a child-friendly environment. Dr. Nikita uses gentle techniques, explains procedures in kid-friendly terms, and offers behavior management strategies to ensure positive dental experiences. We also have TV entertainment and reward systems to make visits enjoyable."
     },
     {
-      question: "Are dental procedures painful?",
-      answer: "With modern techniques and anesthesia options, most dental procedures involve minimal discomfort. We prioritize patient comfort and offer sedation options for anxious patients."
+      question: "What makes pediatric dentistry different from general dentistry?",
+      answer: "As a trained Pedodontist, Dr. Nikita Sharma specializes in children's dental development, behavior management techniques, and treatments specific to primary teeth. Pediatric dentistry focuses on preventive care and early intervention to ensure proper growth and lifelong oral health."
     },
     {
-      question: "How can I schedule an appointment at your clinic?",
-      answer: "You can schedule an appointment through our website, by calling our office during business hours, or by visiting our clinic in person."
+      question: "How can I schedule an appointment at Nivik Smile Care?",
+      answer: "You can book an appointment with Dr. Nikita Sharma by calling our clinic directly, visiting our website, or through WhatsApp. We offer convenient scheduling options including early morning and evening slots for school-going children."
+    },
+    {
+      question: "Does Nivik Smile Care offer emergency dental care for children?",
+      answer: "Yes, we provide emergency dental services for children including treatment for dental trauma, severe toothaches, and other urgent pediatric dental needs. Dr. Nikita is specially trained to handle dental emergencies in young patients with care and compassion."
     }
   ];
 
@@ -102,9 +107,11 @@ const DentalFAQ = () => {
             </div>
             
             <div className="mt-2 text-center">
+              <Link href='/appointment'>
               <button className="bg-teal-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-teal-700 transition duration-300">
                 BOOK APPOINTMENT
               </button>
+              </Link>
             </div>
           </div>
         </div>

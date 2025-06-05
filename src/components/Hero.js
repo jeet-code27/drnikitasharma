@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -13,9 +14,11 @@ export default function Hero() {
         <p className="text-gray-700 max-w-lg mb-10">
           Nivik Smile Care provides comprehensive dental care services for the whole family. Our experienced team uses the latest technology to deliver high-quality.
         </p>
+        <Link href="/appointment" >
         <button className="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold shadow-sm hover:shadow-md transition-all duration-300">
           BOOK AN APPOINTMENT
         </button>
+        </Link>
       </div>
 
       {/* Right image area - placeholder for your image */}
