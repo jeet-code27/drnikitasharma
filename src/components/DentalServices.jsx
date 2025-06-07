@@ -126,10 +126,8 @@ const DentalServices = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col items-center">
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-white to-gray-50 py-8 md:py-16 text-center w-full px-4">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 font-playfair">A Perfect Smile Guaranteed</h1>
-        <p className="text-gray-600 max-w-3xl mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur, enim bibendum volutpat dictum.
-        </p>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 font-playfair">A Perfect Smile Guaranteed</h2>
+       
       </div>
 
       {/* Services Grid - Mobile First Layout */}

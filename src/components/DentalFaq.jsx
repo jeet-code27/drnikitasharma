@@ -43,7 +43,7 @@ const faqItems = [
   return (
     <div className="w-full bg-white py-12 px-4 md:px-8 lg:px-12 flex flex-col lg:flex-row items-center">
       <div className="w-full lg:w-3/5 pr-0 lg:pr-8">
-        <h1 className="text-5xl font-bold text-gray-900 mb-2 font-playfair">Dental Care You Can Trust</h1>
+        <h2 className="text-5xl font-bold text-gray-900 mb-2 font-playfair">Dental Care You Can Trust</h2>
         <p className="text-xl text-gray-600 mb-12">Have a dental concern? Our expert team is ready to provide the quality care you deserve at our state-of-the-art clinic.</p>
         
         <div className="space-y-4">

@@ -55,9 +55,9 @@ const ContactUsSection = () => {
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#00BCD4] rounded-full opacity-10 translate-x-1/3 translate-y-1/3"></div>
                 
                 <div className="relative z-10">
-                    <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-gray-900 via-[#007B8A] to-[#00BCD4] bg-clip-text mb-4 animate-fade-in">
+                    <h2 className="text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-gray-900 via-[#007B8A] to-[#00BCD4] bg-clip-text mb-4 animate-fade-in">
                         Contact Us
-                    </h1>
+                    </h2>
                     <div className="flex items-center justify-center space-x-3 text-lg mb-8">
                         <Link href="/" className="text-gray-700 hover:text-[#00BCD4] transition-colors duration-300 font-medium">
                             Home

@@ -12,10 +12,10 @@ const DentalCareSection = () => {
         <div className="w-full lg:w-1/2 max-w-xl">
           <h3 className="text-teal-500 text-xl font-medium mb-4">Why Choose Us</h3>
           
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-playfair ">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-playfair ">
             Leading the Way in<br />
             Advanced Dental Care
-          </h1>
+          </h2>
           
           <p className="text-gray-600 mb-8">
             At our dental practice, we are committed to providing exceptional dental care using the latest technology and techniques. Our team of experienced professionals ensures that every patient receives personalized treatment in a comfortable and welcoming environment.

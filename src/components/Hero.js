@@ -8,9 +8,9 @@ export default function Hero() {
     <section className="bg-[#bcf7f1] py-12 px-8 md:px-16 lg:px-24 flex flex-col lg:flex-row items-center justify-between rounded-bl-[64px] rounded-br-[64px] min-h-[650px] md:min-h-[600px] relative overflow-hidden">
       {/* Left content area */}
       <div className="lg:max-w-[50%] z-10 mb-12 lg:mb-0">
-        <h1 className="text-4xl font-playfair md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+        <h2 className="text-4xl font-playfair md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
           Keep your smile clean & shine
-        </h1>
+        </h2>
         <p className="text-gray-700 max-w-lg mb-10">
           Nivik Smile Care provides comprehensive dental care services for the whole family. Our experienced team uses the latest technology to deliver high-quality.
         </p>

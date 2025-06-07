@@ -30,9 +30,9 @@ const AboutUsSection = () => {
                 <div className="relative z-10 max-w-4xl mx-auto">
                   
                     
-                    <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-gray-900 via-[#007B8A] to-[#00BCD4] bg-clip-text mb-6 animate-fade-in">
+                    <h2 className="text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-gray-900 via-[#007B8A] to-[#00BCD4] bg-clip-text mb-6 animate-fade-in">
                         About Us
-                    </h1>
+                    </h2>
                     
                     <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
                    Providing gentle, personalized dental care to keep your smile healthy and bright.
@@ -53,10 +53,10 @@ const AboutUsSection = () => {
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
                     {/* Left Text Content */}
                     <div className="w-full lg:w-1/2">
-                        <h1 className="text-4xl md:text-5xl font-playfair text-gray-900 mb-6">
+                        <h2 className="text-4xl md:text-5xl font-playfair text-gray-900 mb-6">
                             A trusted dental professional,<br />
                             committed to your care<br />
-                        </h1>
+                        </h2>
                         <p className="text-gray-700 text-lg leading-relaxed font-poppins">
                             With global training and clinical experience, I focus on offering quality dental care in a calm, hygienic, and patient-friendly environment. Every step—from diagnosis to treatment—is approached with care and attention, aiming to make your visit as comfortable and effective as possible.
                         </p>

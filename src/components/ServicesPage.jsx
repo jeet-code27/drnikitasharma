@@ -58,9 +58,11 @@ const ServicesPage = () => {
                 <div className="relative z-10 max-w-4xl mx-auto">
                   
                     
-                    <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-gray-900 via-[#007B8A] to-[#00BCD4] bg-clip-text mb-6 animate-fade-in">
+                    <h2 className="text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-gray-900 via-[#007B8A] to-[#00BCD4] bg-clip-text mb-6 animate-fade-in">
                         Our Services
-                    </h1>
+                    </h2>
+
+                    <h1 className="hidden">Best Dentist in Ajmer - Dr Nikita Sharma</h1>
                     
                     <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
                         Experience exceptional dental care with our comprehensive range of services designed to keep your smile healthy and beautiful

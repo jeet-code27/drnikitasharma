@@ -15,10 +15,10 @@ const PatientReviews = () => {
           Patient Reviews
         </h2>
         <div className="w-24 h-1 mx-auto bg-gradient-to-r from-teal-500 to-teal-300 rounded-full mb-3 md:mb-4"></div>
-        <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold bg-gradient-to-r from-teal-500 to-teal-300 inline-block text-transparent bg-clip-text leading-relaxed">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold bg-gradient-to-r from-teal-500 to-teal-300 inline-block text-transparent bg-clip-text leading-relaxed">
           Dr. Nikita Sharma 
           <span className="block text-lg md:text-xl lg:text-2xl mt-1">B.D.S., M.D.S., PEDODONTIST, GENERAL DENTISTRY AND CHILD SPECIALIST</span>
-        </h3>
+        </h1>
       </div>
 
       {/* Carousel with controlled z-index */}
