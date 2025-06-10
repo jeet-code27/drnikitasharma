@@ -50,92 +50,12 @@ export const metadata = {
   },
 };
 
-// JSON-LD structured data for Contact page
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": ["ContactPage", "Dentist"],
-  "name": "Nivik Smile Care - Contact",
-  "description": "Contact information for Dr. Nikita Sharma, pediatric dentist in Ajmer",
-  "url": "https://drnikitasharma.in/contact",
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://drnikitasharma.in/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Contact Pediatric Dentist"
-      }
-    ]
-  },
-  "address": [
-    {
-      "@type": "PostalAddress",
-      "name": "Paras Urology & Multispeciality Hospital",
-      "streetAddress": "Haribhau Upadhyay Nagar, C-Block, Pushkar Road",
-      "addressLocality": "Ajmer",
-      "addressRegion": "Rajasthan",
-      "postalCode": "305001",
-      "addressCountry": "IN",
-      "telephone": "+91-82097-88869"
-    },
-    {
-      "@type": "PostalAddress",
-      "name": "Nivik Smile Care",
-      "streetAddress": "B-455 Panchsheel, B Block",
-      "addressLocality": "Ajmer",
-      "addressRegion": "Rajasthan",
-      "postalCode": "305004",
-      "addressCountry": "IN",
-      "telephone": "+91-82097-88869"
-    }
-  ],
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 26.4499,
-    "longitude": 74.6399
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    }
-  ],
-  "contactPoint": [
-    {
-      "@type": "ContactPoint",
-      "telephone": "+91-82097-88869",
-      "contactType": "appointments",
-      "areaServed": "Ajmer and nearby areas",
-      "availableLanguage": ["English", "Hindi"]
-    },
-    {
-      "@type": "ContactPoint",
-      "email": "contact@drnikitasharma.in",
-      "contactType": "customer service"
-    }
-  ],
-  "sameAs": [
-    "https://www.facebook.com/yourpage",
-    "https://www.instagram.com/yourprofile",
-    "https://www.linkedin.com/in/yourprofile"
-  ]
-};
+
 
 export default function Contact() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+     
       <div>
         <ContactUsSection/>
       </div>

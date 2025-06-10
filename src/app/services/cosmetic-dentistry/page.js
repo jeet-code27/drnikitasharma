@@ -51,107 +51,12 @@ export const metadata = {
 };
 
 // JSON-LD structured data for Cosmetic Dentistry page
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": ["MedicalProcedure", "Service"],
-  "name": "Cosmetic Dentistry",
-  "description": "Professional smile enhancement treatments including teeth whitening, veneers and smile makeovers",
-  "url": "https://drnikitasharma.in/services/cosmetic-dentistry",
-  "provider": {
-    "@type": "Dentist",
-    "name": "Dr. Nikita Sharma",
-    "description": "Cosmetic Dentist and Smile Design Specialist",
-    "medicalSpecialty": "Cosmetic Dentistry",
-    "hasCredential": ["B.D.S.", "M.D.S."],
-    "image": "https://drnikitasharma.in/dr-nikita-sharma.jpg"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Cosmetic Dentistry Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Teeth Whitening",
-          "description": "Professional in-office teeth whitening treatment for instant results"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Porcelain Veneers",
-          "description": "Custom-made thin shells to transform tooth appearance"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Dental Crowns",
-          "description": "Tooth-shaped caps to restore damaged or discolored teeth"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Smile Makeover",
-          "description": "Comprehensive smile design combining multiple cosmetic treatments"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Composite Bonding",
-          "description": "Tooth-colored resin material to repair chips and gaps"
-        }
-      }
-    ]
-  },
-  "areaServed": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": 26.4499,
-      "longitude": 74.6399
-    },
-    "geoRadius": 50000,
-    "description": "Serving Ajmer and nearby areas in Rajasthan"
-  },
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://drnikitasharma.in/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Services",
-        "item": "https://drnikitasharma.in/services"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Cosmetic Dentistry"
-      }
-    ]
-  }
-};
+
 
 export default function CosmeticDentistry() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+     
       <div>
         <CosmeticDentistryPage/>
       </div>

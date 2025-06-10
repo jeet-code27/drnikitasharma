@@ -50,82 +50,11 @@ export const metadata = {
   },
 };
 
-// JSON-LD structured data for About page
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": ["AboutPage", "MedicalOrganization"],
-  "name": "Nivik Smile Care - Pediatric Dentistry",
-  "description": "Pediatric dental practice of Dr. Nikita Sharma, the best kids dentist in Ajmer",
-  "url": "https://drnikitasharma.in/about",
-  "medicalSpecialty": "Pediatric Dentistry",
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://drnikitasharma.in/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "About Pediatric Dentist"
-      }
-    ]
-  },
-  "mainEntity": {
-    "@type": "Person",
-    "name": "Dr. Nikita Sharma",
-    "honorificPrefix": "Dr.",
-    "jobTitle": "Pedodontist & Child Dental Specialist",
-    "image": "https://drnikitasharma.in/dr-nikita-sharma-pediatric.jpg",
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Bachelor of Dental Surgery (B.D.S.)"
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Master of Dental Surgery (M.D.S.)"
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Pedodontist Certification"
-      }
-    ],
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "Rajasthan University of Health Sciences"
-    },
-    "knowsAbout": [
-      "Pediatric Dentistry",
-      "Child Dental Care",
-      "Primary Teeth Treatment",
-      "Behavior Management for Children",
-      "Preventive Dentistry for Kids",
-      "General Dentistry"
-    ],
-    "memberOf": {
-      "@type": "Organization",
-      "name": "Indian Society of Pedodontics and Preventive Dentistry"
-    },
-    "description": "Dr. Nikita Sharma is a highly qualified pediatric dentist (B.D.S., M.D.S.) specializing in comprehensive dental care for children and adolescents at Nivik Smile Care, Ajmer.",
-    "hasOccupation": {
-      "@type": "Occupation",
-      "name": "Pediatric Dentist",
-      "description": "Specializing in dental care for infants, children, adolescents and special needs patients"
-    }
-  }
-};
 
 export default function About() {  
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+    
       <div>
         <AboutUsSection/>
       </div>

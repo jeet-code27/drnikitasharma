@@ -50,121 +50,12 @@ export const metadata = {
   },
 };
 
-// JSON-LD structured data for Orthodontic page
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": ["MedicalBusiness", "Dentist"],
-  "name": "Orthodontic Services",
-  "description": "Comprehensive orthodontic treatments for children and adults including braces and aligners",
-  "url": "https://drnikitasharma.in/services/orthodontic",
-  "medicalSpecialty": "Orthodontics",
-  "provider": {
-    "@type": "Dentist",
-    "name": "Dr. Nikita Sharma",
-    "description": "Orthodontic Specialist",
-    "hasCredential": ["B.D.S.", "M.D.S."],
-    "image": "https://drnikitasharma.in/dr-nikita-sharma.jpg"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Orthodontic Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Metal Braces",
-          "description": "Traditional stainless steel braces for effective teeth alignment"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Ceramic Braces",
-          "description": "Tooth-colored braces for less visible orthodontic treatment"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Invisible Aligners",
-          "description": "Clear removable aligners for discreet teeth straightening"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Lingual Braces",
-          "description": "Braces placed behind teeth for completely hidden treatment"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Orthodontic Consultation",
-          "description": "Comprehensive evaluation and treatment planning"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Retainers",
-          "description": "Custom appliances to maintain teeth position after treatment"
-        }
-      }
-    ]
-  },
-  "areaServed": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": 26.4499,
-      "longitude": 74.6399
-    },
-    "geoRadius": 50000,
-    "description": "Serving Ajmer and nearby areas in Rajasthan"
-  },
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://drnikitasharma.in/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Services",
-        "item": "https://drnikitasharma.in/services"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Orthodontic Treatment"
-      }
-    ]
-  },
-  "additionalProperty": {
-    "@type": "PropertyValue",
-    "name": "Treatment Duration",
-    "value": "Typically 12-24 months depending on case complexity"
-  }
-};
+
 
 export default function OrthodonticPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+     
       <div>
         <OrthodonticServicesPage/>
       </div>

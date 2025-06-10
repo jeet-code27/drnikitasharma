@@ -50,79 +50,12 @@ export const metadata = {
   },
 };
 
-// JSON-LD structured data for Appointment page
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": ["WebPage", "MedicalBusiness"],
-  "name": "Dental Appointment Booking",
-  "description": "Online appointment scheduling with pediatric dentist Dr. Nikita Sharma",
-  "url": "https://drnikitasharma.in/appointment",
-  "potentialAction": {
-    "@type": "ReserveAction",
-    "name": "Book Dental Appointment",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://drnikitasharma.in/appointment",
-      "actionPlatform": [
-        "http://schema.org/DesktopWebPlatform",
-        "http://schema.org/MobileWebPlatform"
-      ]
-    },
-    "result": {
-      "@type": "Reservation",
-      "name": "Dental Appointment"
-    }
-  },
-  "provider": {
-    "@type": "Dentist",
-    "name": "Dr. Nikita Sharma",
-    "description": "Pediatric Dentist and Child Dental Specialist",
-    "medicalSpecialty": "Pediatric Dentistry",
-    "hasCredential": ["B.D.S.", "M.D.S.", "Pedodontist Certification"],
-    "availableService": [
-      {
-        "@type": "MedicalProcedure",
-        "name": "Pediatric Dental Checkup"
-      },
-      {
-        "@type": "MedicalProcedure",
-        "name": "Child Teeth Cleaning"
-      },
-      {
-        "@type": "MedicalProcedure",
-        "name": "Dental Fillings for Children"
-      },
-      {
-        "@type": "MedicalProcedure",
-        "name": "Orthodontic Consultation"
-      }
-    ]
-  },
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://drnikitasharma.in/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Book Appointment"
-      }
-    ]
-  }
-};
+
 
 export default function AppointmentPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+    
       <div>
         <BookingSystem/>
       </div>
