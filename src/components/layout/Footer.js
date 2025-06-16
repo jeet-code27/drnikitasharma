@@ -8,23 +8,38 @@ const Footer = () => {
         {/* Left Section */}
         <div className="p-10 md:w-1/2 mt-20">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">DR. NIKITA SHARMA</h2>
-          <p className="text-gray-600 mb-6">
+          {/* <p className="text-gray-600 mb-6">
             Experienced and internationally certified healthcare professional dedicated to providing the best care.
-          </p>
+          </p> */}
           
           <div className="space-y-4">
-            <div className="flex items-start">
-              <div className="text-gray-500 mt-1 mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <div>
-                <p className="text-gray-600 mt-2 font-medium">Nivik Smile Care</p>
-                <p className="text-gray-600">B-455 Panchsheel, B Block, Ajmer, Rajasthan</p>
-                <p className="text-gray-600 font-medium">Paras Urology & Multispeciality Hospital</p>
-                <p className="text-gray-600">Haribhau Upadhyay Nagar, C-Block, Pushkar Road, Ajmer</p>
+            <div>
+              <p className="text-gray-800 font-bold text-xl mb-2">Nivik Smile Care</p>
+              <div className="ml-4 space-y-3">
+                <div className="flex items-start">
+                  <div className="text-gray-500 mt-1 mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-gray-600 font-medium">Paras Urology & Multispeciality Hospital</p>
+                    <p className="text-gray-600">Haribhau Upadhyay Nagar, C-Block, Pushkar Road, Ajmer</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-gray-500 mt-1 mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-gray-600 font-medium">Home</p>
+                    <p className="text-gray-600">B-455 Panchsheel, B Block, Ajmer, Rajasthan</p>
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -76,7 +91,10 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
               <div className="text-gray-800 font-semibold text-lg mb-3">Monday - Saturday</div>
-              <div className="space-y-3">
+              <div className="mb-3">
+                <p className="text-gray-800 font-bold text-base">Nivik Smile Care</p>
+              </div>
+              <div className="space-y-3 ml-4">
                 <div className="bg-gray-50 p-3 rounded-lg">
                   <div className="flex justify-between items-center">
                     <span className="text-gray-700 font-medium">Paras Urology Hospital</span>
@@ -86,7 +104,7 @@ const Footer = () => {
                 </div>
                 <div className="bg-gray-50 p-3 rounded-lg">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700 font-medium">Nivik Smile Care</span>
+                    <span className="text-gray-700 font-medium">Home</span>
                     <span className="text-teal-600 font-semibold">5:00 PM - 7:00 PM</span>
                   </div>
                   <div className="text-xs text-gray-500 mt-1">Evening Session</div>

@@ -178,7 +178,7 @@ const PatientReviews = () => {
         
         <motion.div variants={subtitleVariants}>
           <motion.h1 
-            className="text-xl md:text-2xl lg:text-3xl font-semibold bg-gradient-to-r from-teal-500 to-teal-300 inline-block text-transparent bg-clip-text leading-relaxed"
+            className="text-2xl md:text-3xl lg:text-4xl font-semibold bg-gradient-to-r from-teal-500 to-teal-300 inline-block text-transparent bg-clip-text leading-relaxed"
             whileHover={{ 
               scale: 1.02,
               transition: { type: "spring", stiffness: 300, damping: 10 }
@@ -186,14 +186,14 @@ const PatientReviews = () => {
           >
             Dr. Nikita Sharma
           </motion.h1>
-          {/* <motion.span 
-            className="block text-lg md:text-xl lg:text-2xl mt-1 text-gray-700"
+          <motion.span 
+            className="block text-lg md:text-lg lg:text-xl mt-1 text-gray-700"
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            B.D.S., M.D.S., PEDODONTIST, GENERAL DENTISTRY AND CHILD SPECIALIST
-          </motion.span> */}
+            B.D.S., M.D.S. (PEDODONTIST)
+          </motion.span>
         </motion.div>
       </div>
 

@@ -9,8 +9,7 @@ const DentalServices = () => {
   // State for counter values
   const [yearsCount, setYearsCount] = useState(0);
   const [clientsCount, setClientsCount] = useState(0);
-  const [teamCount, setTeamCount] = useState(0);
-  const [awardsCount, setAwardsCount] = useState(0);
+  const [patientsCount, setPatientsCount] = useState(0);
 
   useEffect(() => {
     // Function to check if element is in viewport
@@ -50,28 +49,19 @@ const DentalServices = () => {
         });
       }, 40);
       
-      const teamInterval = setInterval(() => {
-        setTeamCount(prev => {
-          if (prev < 10) return prev + 1;
-          clearInterval(teamInterval);
-          return 10;
+      const patientsInterval = setInterval(() => {
+        setPatientsCount(prev => {
+          if (prev < 5000) return prev + 150;
+          clearInterval(patientsInterval);
+          return 5000;
         });
-      }, 100);
-      
-      const awardsInterval = setInterval(() => {
-        setAwardsCount(prev => {
-          if (prev < 10) return prev + 1;
-          clearInterval(awardsInterval);
-          return 10;
-        });
-      }, 200);
+      }, 30);
       
       // Cleanup intervals
       return () => {
         clearInterval(yearsInterval);
         clearInterval(clientsInterval);
-        clearInterval(teamInterval);
-        clearInterval(awardsInterval);
+        clearInterval(patientsInterval);
       };
     };
 
@@ -207,7 +197,7 @@ const DentalServices = () => {
         className="w-full bg-teal-500 text-white py-8 md:py-12 mt-0"
       >
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 text-center">
             <div className="flex flex-col items-center">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-1 md:mb-2">{yearsCount}+</h2>
               <p className="text-teal-100 text-sm md:text-base">Years Experience</p>
@@ -219,13 +209,8 @@ const DentalServices = () => {
             </div>
             
             <div className="flex flex-col items-center">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-1 md:mb-2">{teamCount}+</h2>
-              <p className="text-teal-100 text-sm md:text-base">Professional Team</p>
-            </div>
-            
-            <div className="flex flex-col items-center">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-1 md:mb-2">{awardsCount}+</h2>
-              <p className="text-teal-100 text-sm md:text-base">Award Winning</p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-1 md:mb-2">{patientsCount}+</h2>
+              <p className="text-teal-100 text-sm md:text-base">Happy Patients</p>
             </div>
           </div>
         </div>
