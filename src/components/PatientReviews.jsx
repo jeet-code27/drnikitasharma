@@ -186,14 +186,14 @@ const PatientReviews = () => {
           >
             Dr. Nikita Sharma
           </motion.h1>
-          <motion.span 
+          {/* <motion.span 
             className="block text-lg md:text-xl lg:text-2xl mt-1 text-gray-700"
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
             transition={{ delay: 1, duration: 0.6 }}
           >
             B.D.S., M.D.S., PEDODONTIST, GENERAL DENTISTRY AND CHILD SPECIALIST
-          </motion.span>
+          </motion.span> */}
         </motion.div>
       </div>
 

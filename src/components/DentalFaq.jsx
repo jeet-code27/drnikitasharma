@@ -224,7 +224,7 @@ const DentalFAQ = () => {
           animate={isImageInView ? "visible" : "hidden"}
         >
           <Image 
-            src="/images/clinic.png" 
+            src="/images/clinic.webp" 
             alt="Dental clinic interior" 
             width={800} 
             height={600} 

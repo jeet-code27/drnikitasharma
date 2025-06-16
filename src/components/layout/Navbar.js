@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, Phone, MapPin, Clock, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { Menu, X, Phone, MapPin, Clock, Facebook, Instagram, Youtube } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
@@ -50,9 +50,7 @@ export default function Navbar() {
             <Link href="#" className="hover:opacity-80 transition-opacity">
               <Facebook size={20} />
             </Link>
-            <Link href="#" className="hover:opacity-80 transition-opacity">
-              <Twitter size={20} />
-            </Link>
+            
             <Link href="#" className="hover:opacity-80 transition-opacity">
               <Instagram size={20} />
             </Link>

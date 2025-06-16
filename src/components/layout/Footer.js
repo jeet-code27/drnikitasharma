@@ -21,10 +21,10 @@ const Footer = () => {
                 </svg>
               </div>
               <div>
-                <p className="text-gray-600 font-medium">Paras Urology & Multispeciality Hospital</p>
-                <p className="text-gray-600">Haribhau Upadhyay Nagar, C-Block, Pushkar Road, Ajmer</p>
                 <p className="text-gray-600 mt-2 font-medium">Nivik Smile Care</p>
                 <p className="text-gray-600">B-455 Panchsheel, B Block, Ajmer, Rajasthan</p>
+                <p className="text-gray-600 font-medium">Paras Urology & Multispeciality Hospital</p>
+                <p className="text-gray-600">Haribhau Upadhyay Nagar, C-Block, Pushkar Road, Ajmer</p>
               </div>
             </div>
             
