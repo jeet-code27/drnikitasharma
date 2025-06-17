@@ -245,12 +245,12 @@ const DentalFAQ = () => {
           >
             <div className="flex items-center mb-4">
               <motion.div 
-                className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden mr-3 md:mr-4 shadow-md"
+                className="w-16 h-12 md:w-20 md:h-16 rounded-full overflow-hidden mr-3 md:mr-4 shadow-md"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
                 <Image 
-                  src="/images/dentist.png" 
+                  src="/images/drnikita.jpg" 
                   alt="Dr. Nikita Sharma" 
                   width={64} 
                   height={64} 

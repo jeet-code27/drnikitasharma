@@ -156,7 +156,7 @@ const ServicesSlider = () => {
     };
 
     return (
-        <div ref={ref} className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-[#f0fffe] to-[#e6f9f7] overflow-hidden">
+        <div ref={ref} className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-[#f0fffe] to-[] overflow-hidden">
             {/* Animated background decorations */}
             <motion.div 
                 className="absolute top-0 left-0 w-96 h-96 bg-[#caf4ef] rounded-full opacity-10 -translate-x-1/2 -translate-y-1/2"
@@ -243,7 +243,7 @@ const ServicesSlider = () => {
                         variants={itemVariants}
                     >
                         Comprehensive 
-                        <span className="text-transparent bg-gradient-to-r from-[#007B8A] to-[#00BCD4] bg-clip-text"> Dental Care</span>
+                        <span className="text-[#14B8A6]"> Dental Care</span>
                     </motion.h2>
                     
                     <motion.p 

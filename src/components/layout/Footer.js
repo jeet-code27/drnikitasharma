@@ -7,10 +7,8 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row">
         {/* Left Section */}
         <div className="p-10 md:w-1/2 mt-20">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">DR. NIKITA SHARMA</h2>
-          {/* <p className="text-gray-600 mb-6">
-            Experienced and internationally certified healthcare professional dedicated to providing the best care.
-          </p> */}
+          <h2 className="text-2xl font-bold text-gray-800 mb-1">DR. NIKITA SHARMA</h2>
+          <p className="text-lg text-gray-600 font-medium mb-4">B.D.S., M.D.S. (PEDODONTIST)</p>
           
           <div className="space-y-4">
             <div>

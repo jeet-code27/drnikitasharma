@@ -129,7 +129,7 @@ const ContactUsSection = () => {
                 >
                     <motion.h2 
                         variants={itemVariants}
-                        className="text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-gray-900 via-[#007B8A] to-[#00BCD4] bg-clip-text mb-4"
+                        className="text-6xl md:text-7xl font-bold text-[#007B8A] mb-4"
                     >
                         Contact Us
                     </motion.h2>

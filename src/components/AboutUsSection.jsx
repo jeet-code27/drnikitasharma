@@ -125,7 +125,7 @@ const AboutUsSection = () => {
         >
           <motion.h2 
             variants={itemVariants}
-            className="text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-gray-900 via-[#007B8A] to-[#00BCD4] bg-clip-text mb-6"
+            className="text-6xl md:text-7xl font-bold text-[#007B8A] mb-6"
           >
             About Us
           </motion.h2>
@@ -299,11 +299,11 @@ const AboutUsSection = () => {
         >
           {[
             { icon: "M12 2C9.243 2 7 4.243 7 7c0 3.866 5 13 5 13s5-9.134 5-13c0-2.757-2.243-5-5-5z M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4z", 
-              value: "10+", label: "Dedicated Team" },
+              value: "10+", label: "Years Experience" },
             { icon: "M3 7h18v13H3zM8 7V4h8v3", 
               value: "1", label: "Clinic" },
             { icon: "M10 14l2-2 2 2M12 12v6M12 6a4 4 0 1 0 0-8 4 4 0 0 0 0 8z", 
-              value: "1000+", label: "Happy Clients" },
+              value: "5000+", label: "Happy Patients" },
             { icon: "M4 4h16v16H4zM8 2v4M16 2v4M4 10h16", 
               value: "500+", label: "Online Appointment" },
           ].map((stat, index) => (

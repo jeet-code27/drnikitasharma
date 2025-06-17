@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Phone } from 'lucide-react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 
-const DentalCareSection = () => {
+const   DentalCareSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.1 });
   const mainControls = useAnimation();
@@ -156,7 +156,7 @@ const DentalCareSection = () => {
               initial={{ backgroundPosition: "0% 50%" }}
               animate={{ backgroundPosition: "100% 50%" }}
               transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
-              className="bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent bg-[length:200%_200%]"
+              className="  text-[#14B8A6] "
             >
               Advanced Dental Care
             </motion.span>

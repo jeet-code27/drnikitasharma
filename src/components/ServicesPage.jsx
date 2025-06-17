@@ -148,7 +148,7 @@ const ServicesPage = () => {
         >
           <motion.h2 
             variants={itemVariants}
-            className="text-6xl md:text-7xl font-bold text-transparent bg-gradient-to-r from-gray-900 via-[#007B8A] to-[#00BCD4] bg-clip-text mb-6"
+            className="text-6xl md:text-7xl font-bold text-[#007B8A] mb-6"
           >
             Our Services
           </motion.h2>
@@ -233,7 +233,7 @@ const ServicesPage = () => {
               variants={itemVariants}
               className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
             >
-              Choose Your <span className="text-transparent bg-gradient-to-r from-[#007B8A] to-[#00BCD4] bg-clip-text">Perfect Treatment</span>
+              Choose Your <span className="text-[#007B8A]">Perfect Treatment</span>
             </motion.h2>
             <motion.p 
               variants={itemVariants}

@@ -64,7 +64,7 @@ export default function Navbar() {
       {/* Main Navbar */}
       <div className="bg-white shadow-md py-4">
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-          {/* Logo */}
+          {/* Logo with Text */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -72,13 +72,19 @@ export default function Navbar() {
           >
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/logo.png"
+                src="/images/niviksmilecarelogo.png"
                 alt="Logo"
                 width={200}
                 height={100}
                 className="h-20 w-auto"
                 priority
               />
+              <div className="ml-4">
+                <h1 className="text-xl md:text-3xl font-bold text-[#14B8A6]">
+                  Nivik Smile Care
+                </h1>
+              
+              </div>
             </Link>
           </motion.div>
           
@@ -167,6 +173,12 @@ export default function Navbar() {
                         className="h-16 w-auto"
                         priority
                       />
+                      <div className="ml-3">
+                        <h2 className="text-lg font-bold text-[#14B8A6]">
+                          Nivik Smile Care
+                        </h2>
+                      
+                      </div>
                     </Link>
                   </motion.div>
                   <motion.button 

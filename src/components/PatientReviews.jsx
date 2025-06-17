@@ -161,7 +161,7 @@ const PatientReviews = () => {
         >
           <span className="inline-block">Patient</span>{" "}
           <motion.span 
-            className="inline-block bg-gradient-to-r from-teal-500 to-teal-300 text-transparent bg-clip-text"
+            className="inline-block  text-[#14B8A6]"
             initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ delay: 0.8, duration: 0.6 }}
@@ -178,7 +178,7 @@ const PatientReviews = () => {
         
         <motion.div variants={subtitleVariants}>
           <motion.h1 
-            className="text-2xl md:text-3xl lg:text-4xl font-semibold bg-gradient-to-r from-teal-500 to-teal-300 inline-block text-transparent bg-clip-text leading-relaxed"
+            className="text-2xl md:text-3xl lg:text-4xl font-semibold  inline-block text-[#14B8A6]  leading-relaxed"
             whileHover={{ 
               scale: 1.02,
               transition: { type: "spring", stiffness: 300, damping: 10 }
