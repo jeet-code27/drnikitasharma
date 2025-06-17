@@ -17,46 +17,52 @@ export default function Navbar() {
     <>
       {/* Top Bar - Hidden on Mobile */}
       <div className="hidden md:block bg-[#2EC4B6] text-white py-3">
-        <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-          {/* Left Section */}
-          <div className="flex space-x-8 items-center">
-            <div className="flex items-center">
-              <Phone size={18} className="mr-2" />
-              <div>
-                <span className="font-medium">Call us now</span>
-                <p className="text-sm">+91 82097 88869</p>
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="flex justify-between items-center">
+            {/* Left Section */}
+            <div className="flex space-x-8 items-center">
+              <div className="flex items-center">
+                <Phone size={18} className="mr-2" />
+                <div>
+                  <span className="font-medium">Call us now</span>
+                  <p className="text-sm">+91 82097 88869</p>
+                </div>
+              </div>
+              
+              {/* Location 1 */}
+              <div className="flex items-center">
+                <MapPin size={18} className="mr-2" />
+                <div>
+                  <span className="font-medium">Paras Urology & Multispeciality Hospital</span>
+                  <p className="text-sm">Haribhau Upadhyay Nagar, C-Block, Pushkar Road, Ajmer</p>
+                  <p className="text-sm">10:00 AM - 12:00 PM</p>
+                </div>
+              </div>
+              
+              {/* Location 2 */}
+              <div className="flex items-center">
+                <MapPin size={18} className="mr-2" />
+                <div>
+                  <span className="font-medium">Home</span>
+                  <p className="text-sm">B-455 Panchsheel, B Block, Ajmer, Rajasthan</p>
+                  <p className="text-sm">5:00 PM - 7:00 PM</p>
+                </div>
               </div>
             </div>
             
-            <div className="flex items-center">
-              <MapPin size={18} className="mr-2" />
-              <div>
-                <span className="font-medium">B-455 PANCHSHEEL</span>
-                <p className="text-sm">B BLOCK, AJMER</p>
-              </div>
+            {/* Social Icons */}
+            <div className="flex space-x-4">
+              <Link href="#" className="hover:opacity-80 transition-opacity">
+                <Facebook size={20} />
+              </Link>
+              
+              <Link href="#" className="hover:opacity-80 transition-opacity">
+                <Instagram size={20} />
+              </Link>
+              <Link href="#" className="hover:opacity-80 transition-opacity">
+                <Youtube size={20} />
+              </Link>
             </div>
-            
-            <div className="flex items-center">
-              <Clock size={18} className="mr-2" />
-              <div>
-                <span className="font-medium">Monday - Saturday</span>
-                <p className="text-sm">09:00 AM - 06:00 PM</p>
-              </div>
-            </div>
-          </div>
-          
-          {/* Social Icons */}
-          <div className="flex space-x-4">
-            <Link href="#" className="hover:opacity-80 transition-opacity">
-              <Facebook size={20} />
-            </Link>
-            
-            <Link href="#" className="hover:opacity-80 transition-opacity">
-              <Instagram size={20} />
-            </Link>
-            <Link href="#" className="hover:opacity-80 transition-opacity">
-              <Youtube size={20} />
-            </Link>
           </div>
         </div>
       </div>
@@ -262,7 +268,8 @@ export default function Navbar() {
                       <Phone size={18} className="text-[#2EC4B6]" />
                     </div>
                     <div>
-                      <span className="font-medium">Call Center 1108</span>
+                      <span className="font-medium">Call us now</span>
+                      <p className="text-sm">+91 82097 88869</p>
                     </div>
                   </div>
                   
@@ -271,17 +278,20 @@ export default function Navbar() {
                       <MapPin size={18} className="text-[#2EC4B6]" />
                     </div>
                     <div>
-                      <span className="font-medium">B-405 Panchsheel</span>
+                      <span className="font-medium">Paras Urology & Multispeciality Hospital</span>
+                      <p className="text-sm">Haribhau Upadhyay Nagar, C-Block, Pushkar Road, Ajmer</p>
+                      <p className="text-sm">10:00 AM - 12:00 PM</p>
                     </div>
                   </div>
                   
                   <div className="flex items-center">
                     <div className="bg-[#2EC4B6] bg-opacity-10 p-2 rounded-full mr-3">
-                      <Clock size={18} className="text-[#2EC4B6]" />
+                      <MapPin size={18} className="text-[#2EC4B6]" />
                     </div>
                     <div>
-                      <span className="font-medium">Monday - Saturday</span>
-                      <p className="text-sm">09:00 AM - 06:00 PM</p>
+                      <span className="font-medium">Home</span>
+                      <p className="text-sm">B-455 Panchsheel, B Block, Ajmer, Rajasthan</p>
+                      <p className="text-sm">5:00 PM - 7:00 PM</p>
                     </div>
                   </div>
                 </motion.div>
