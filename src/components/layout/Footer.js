@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
           
           <div className="border-t border-gray-200 mt-8 pt-6">
-            <p className="text-gray-600 text-sm">2025 © Dr. Nikita Sharma. All rights reserved.</p>
+            <p className="text-gray-600 text-sm">2025 © <Link href='https://seocialmedia.in/' target='_blank' className='cursor-pointer text-teal-500'>SEOcial Media Solutions</Link>. All rights reserved.</p>
           </div>
         </div>
         
