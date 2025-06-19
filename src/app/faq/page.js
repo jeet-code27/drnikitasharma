@@ -57,6 +57,7 @@ export default function Faq() {
     <>
    
       <div>
+        <h1 className="hidden">Best Dentist in Ajmer - Dr Nikita Sharma</h1>
         <FaqPage/>
       </div>
     </>

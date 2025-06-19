@@ -86,9 +86,9 @@ export default function Navbar() {
                 priority
               />
               <div className="ml-4">
-                <h1 className="text-xl md:text-3xl font-bold text-[#14B8A6]">
+                <h2 className="text-xl md:text-3xl font-bold text-[#14B8A6]">
                   Nivik Smile Care
-                </h1>
+                </h2>
               
               </div>
             </Link>

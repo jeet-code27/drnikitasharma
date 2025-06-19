@@ -126,14 +126,14 @@ const FaqPage = () => {
         ref={headerRef}
         className="flex flex-col items-center justify-center text-center px-4 py-12"
       >
-        <motion.h1 
+        <motion.h2 
           initial="hidden"
           animate={isHeaderInView ? "visible" : "hidden"}
           variants={itemVariants}
           className="text-5xl font-bold text-black mb-0"
         >
           FAQ
-        </motion.h1>
+        </motion.h2>
         <motion.div 
           initial="hidden"
           animate={isHeaderInView ? "visible" : "hidden"}
